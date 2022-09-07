@@ -16,7 +16,8 @@ export default function Login({
     const loginBody = {
         width: "800px", 
         height: "500px",
-        background: "rgb(11, 16, 67)"
+        background: "rgb(11, 16, 67)",
+        color: white
     }
 
     const onSubmit = e => {
