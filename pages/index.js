@@ -4,6 +4,7 @@ import Dashboard from '../component/dashboard/Dashboard';
 import Login from '../component/login/Login'
 import Register from '../component/register/register'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   const [isUserLoggedIn, setUserIsLoggedIn] = useState(false);
@@ -21,7 +22,8 @@ export default function Home() {
           setUserIsLoggedIn={setUserIsLoggedIn}
           setLoggedUserInfo={setLoggedUserInfo}
         />}
-        {/* <Register /> */}
+
+        <Link href="/register"><a> Register </a></Link>
         {isUserLoggedIn && <Dashboard loggedUserInfo={loggedUserInfo} />}
       </main>
     </div>
