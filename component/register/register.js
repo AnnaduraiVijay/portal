@@ -176,7 +176,7 @@ export default function Register() {
                     </div>
 
                     <button type="submit" style={inputCntBtn}>Submit</button>
-                    { cntSuccess && <div>Registration Success</div> }
+                    { cntSuccess && <div>Registration Completed Successfully. Please login </div> }
                 </form>
                 
             </div>
