@@ -42,7 +42,11 @@ export default function Login({
         "margin-left": "20px",
         "margin-top": "10px"
     }
-    const buttonColor = {
+    const inputCntBtn = {
+        width: "250px",
+        height: "30px",
+        "margin-left": "20px",
+        "margin-top": "10px",
         background: "rgb(172 176 2)"
     }
 
@@ -103,11 +107,11 @@ export default function Login({
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
-                <div style={buttonColor}>
+                <div>
                     <button
                         type="submit"
                         id="button-input"
-                        style={inputCnt}
+                        style={inputCntBtn}
                         disabled={isEnable}
                     >
                         Sign In
