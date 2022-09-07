@@ -13,7 +13,9 @@ export default function Dashboard({
     }
     const tableArea = {
         "border-collapse": "collapse",
-        "border": "1px solid white"
+        "border": "1px solid white",
+        margin: "100px 0 0 100px",        
+        width: "600px"
     }
     delete displayObj.token;
     return (<section className="cnt-container" style={contentArea}>
