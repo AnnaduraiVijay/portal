@@ -21,10 +21,23 @@ export default function Register() {
     const formArea = {
         border: "1px solid red",
         width: "400px",
-        height: "200px",
+        height: "325px",
         padding: "40px 0 0 50px",
         background: "rgb(32 49 115)",
         margin: "25px 0 0 200px"
+    };
+    const inputCnt = {
+        width: "250px",
+        height: "30px",
+        "margin-left": "20px",
+        "margin-top": "10px"
+    };
+    const inputCntBtn = {
+        width: "250px",
+        height: "30px",
+        "margin-left": "20px",
+        "margin-top": "10px",
+        background: "rgb(172 176 2)"
     };
 
 
@@ -87,6 +100,7 @@ export default function Register() {
                             value={full_name}
                             onChange={(e) => updateFormData(e)}
                             placeholder="Full name"
+                            style={inputCnt}
                             type="text"
                             name="full_name"
                             required
@@ -98,6 +112,7 @@ export default function Register() {
                             onChange={(e) => updateFormData(e)}
                             placeholder="User Name"
                             type="text"
+                            style={inputCnt}
                             name="username"
                             required
                         />
@@ -108,6 +123,7 @@ export default function Register() {
                             onChange={(e) => updateFormData(e)}
                             placeholder="Select Country"
                             type="text"
+                            style={inputCnt}
                             name="country_row_id"
                             required
                         />
@@ -118,6 +134,7 @@ export default function Register() {
                             onChange={(e) => updateFormData(e)}
                             placeholder="Mobile Number"
                             type="number"
+                            style={inputCnt}
                             name="mobile_number"
                             required
                         />
@@ -128,6 +145,7 @@ export default function Register() {
                             onChange={(e) => updateFormData(e)}
                             placeholder="Email address"
                             type="email"
+                            style={inputCnt}
                             name="email_id"
                             required
                         />
@@ -138,6 +156,7 @@ export default function Register() {
                             onChange={(e) => updateFormData(e)}
                             placeholder="Password"
                             type="password"
+                            style={inputCnt}
                             name="password"
                             required
                         />
@@ -148,11 +167,12 @@ export default function Register() {
                             onChange={(e) => updateFormData(e)}
                             placeholder="Referral ID"
                             type="text"
+                            style={inputCnt}
                             name="referral"
                         />
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" style={inputCntBtn}>Submit</button>
                 </form>
             </div>
         </div>
