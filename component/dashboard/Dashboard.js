@@ -17,6 +17,10 @@ export default function Dashboard({
         margin: "100px 0 0 100px",        
         width: "600px"
     }
+    const contTable = {
+        border: "1px solid white",
+        padding: "8px"
+    }
     delete displayObj.token;
     return (<section className="cnt-container" style={contentArea}>
         <table style={tableArea}>
@@ -32,14 +36,14 @@ export default function Dashboard({
                 </td>
             </tr>
             {Object.entries(displayObj).map(([key, value], index) => (
-                <tr key={key}>
-                    <td>
+                <tr key={key} style = {contTable}>
+                    <td style={contTable}>
                         {index + 1}
                     </td>
-                    <td>
+                    <td style = {contTable}>
                         {key}
                     </td>
-                    <td>
+                    <td style = {contTable}>
                         {value}
                     </td>
                 </tr>
