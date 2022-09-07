@@ -22,7 +22,8 @@ export default function Login({
     const loginContent = {
         display: "flex",
         "align-items": "center",
-        "justify-content": "center"
+        "justify-content": "center",
+        "margin-top": "10px"
     }
     const loginCenter = {
         padding: "75px 50px 0 50px"
@@ -33,13 +34,16 @@ export default function Login({
         height: "200px",
         padding: "40px 0 0 50px",
         background: "rgb(32 49 115)",
-        margin: "40px 0 0 200px"
+        margin: "25px 0 0 200px"
     }
     const inputCnt = {
         width: "250px",
         height: "30px",
         "margin-left": "20px",
         "margin-top": "10px"
+    }
+    const buttonColor = {
+        background: "rgb(172 176 2)"
     }
 
     const onSubmit = e => {
@@ -99,7 +103,7 @@ export default function Login({
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
-                <div>
+                <div style={buttonColor}>
                     <button
                         type="submit"
                         id="button-input"
