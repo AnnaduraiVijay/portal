@@ -25,7 +25,15 @@ export default function Login({
         "justify-content": "center"
     }
     const loginCenter = {
-        padding: "100px 50px 0 50px"
+        padding: "75px 50px 0 50px"
+    }
+    const formArea = {
+        border: "1px solid red",
+        width: "400px",
+        height: "200px",
+        padding: "40px 0 0 50px",
+        background: "rgb(32 49 115)",
+        margin: "40px 0 0 200px"
     }
 
     const onSubmit = e => {
@@ -62,7 +70,7 @@ export default function Login({
                 <div className="login-container" style={loginContent}>Login</div>
                 <div className="login-header" style={loginContent}>Enter your account login details </div>
             </div>
-            <form className="login-form-container" onSubmit={onSubmit}>
+            <form className="login-form-container" onSubmit={onSubmit} style={formArea}>
                 <div>
                     <input
                         type="email"
