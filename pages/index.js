@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Login from '../component/login/Login'
+import Register from '../component/register/register'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Login />
+        {/* <Login /> */}
+        <Register />
       </main>
     </div>
   )
