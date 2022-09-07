@@ -43,7 +43,7 @@ export default function Login({
     };
 
     return (
-        <div className="login-user" style={{"width:800px", "height": "500px", background: rgb(11, 16, 67)}}>
+        <div className="login-user" style={{"width:800px", "height": "500px", "background": "rgb(11, 16, 67)"}}>
             <div className="login-container">Login</div>
             <div className="login-header">Enter your account login details </div>
             <form className="login-form-container" onSubmit={onSubmit}>
