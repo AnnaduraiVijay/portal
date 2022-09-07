@@ -56,9 +56,9 @@ export default function Login({
 
     return (
         <div className="login-user" style={loginBody}>
-            <div className="login-content" style={loginContent}>
-                <div className="login-container">Login</div>
-                <div className="login-header">Enter your account login details </div>
+            <div className="login-content">
+                <div className="login-container" style={loginContent}>Login</div>
+                <div className="login-header" style={loginContent}>Enter your account login details </div>
             </div>
             <form className="login-form-container" onSubmit={onSubmit}>
                 <input
