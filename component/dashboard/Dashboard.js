@@ -5,8 +5,14 @@ export default function Dashboard({
     loggedUserInfo
 }) {
     const displayObj = { ...loggedUserInfo };
+    const contentArea = {
+        width: "800px", 
+        height: "500px",
+        background: "rgb(11, 16, 67)",
+        color: "white"
+    }
     delete displayObj.token;
-    return (<section>
+    return (<section className="cnt-container" style={contentArea}>
         <table>
             <tr>
                 <td>

@@ -29,12 +29,12 @@ export default function Login({
         padding: "75px 50px 0 50px"
     }
     const formArea = {
-        border: "1px solid red",
         width: "400px",
         height: "200px",
         padding: "40px 0 0 50px",
         background: "rgb(32 49 115)",
-        margin: "25px 0 0 200px"
+        margin: "25px 0 0 200px",
+        color:"white"
     }
     const inputCnt = {
         width: "250px",

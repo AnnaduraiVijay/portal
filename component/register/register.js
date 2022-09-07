@@ -19,12 +19,12 @@ export default function Register() {
         padding: "40px 50px 0 50px"
     };
     const formArea = {
-        border: "1px solid red",
         width: "400px",
         height: "325px",
         padding: "0px 0 0 50px",
         background: "rgb(32 49 115)",
-        margin: "25px 0 0 200px"
+        margin: "25px 0 0 200px",
+        color: "white"
     };
     const inputCnt = {
         width: "250px",
@@ -83,6 +83,7 @@ export default function Register() {
             })
             .then((response) => {
                 console.log(response);
+                console.log(response.data.status);
                 // setLoginData(response.data);
             });
 
