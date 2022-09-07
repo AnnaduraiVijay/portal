@@ -40,7 +40,8 @@ export default function Login({
         width: "250px",
         height: "30px",
         "margin-left": "20px",
-        "margin-top": "10px"
+        "margin-top": "10px",
+        background: "rgb(47 48 100)"
     }
     const inputCntBtn = {
         width: "250px",

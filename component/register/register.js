@@ -22,7 +22,7 @@ export default function Register() {
         border: "1px solid red",
         width: "400px",
         height: "325px",
-        padding: "40px 0 0 50px",
+        padding: "0px 0 0 50px",
         background: "rgb(32 49 115)",
         margin: "25px 0 0 200px"
     };
@@ -30,7 +30,8 @@ export default function Register() {
         width: "250px",
         height: "30px",
         "margin-left": "20px",
-        "margin-top": "10px"
+        "margin-top": "10px",
+        background: "rgb(47 48 100)"
     };
     const inputCntBtn = {
         width: "250px",
