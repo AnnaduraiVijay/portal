@@ -17,7 +17,7 @@ export default function Dashboard({
     }
     delete displayObj.token;
     return (<section className="cnt-container" style={contentArea}>
-        <table style={}>
+        <table style={tableArea}>
             <tr>
                 <td>
                     S.No
