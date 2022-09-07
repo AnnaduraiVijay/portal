@@ -128,12 +128,6 @@
   }
 }
 
-body {
-  background: blue;
-  width: 1000px;
-  height:800px;
-  overflow: hidden;
-}
 
 .login-user {
   background: green;
