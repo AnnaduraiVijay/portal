@@ -11,9 +11,13 @@ export default function Dashboard({
         background: "rgb(11, 16, 67)",
         color: "white"
     }
+    const tableArea = {
+        "border-collapse": "collapse"
+        "border": "1px solid white"
+    }
     delete displayObj.token;
     return (<section className="cnt-container" style={contentArea}>
-        <table>
+        <table style={}>
             <tr>
                 <td>
                     S.No
