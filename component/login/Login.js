@@ -21,8 +21,8 @@ export default function Login({
     }
     const loginContent = {
         display: "flex",
-        align-items: "center",
-        justify-content: "center"
+        "align-items": "center",
+        "justify-content": "center"
 
     }
 
