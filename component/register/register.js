@@ -8,6 +8,16 @@ export default function Register() {
         height: "500px",
         background: "rgb(11, 16, 67)",
         color: "white"
+    };
+
+    const registerContent = {
+        display: "flex",
+        "align-items": "center",
+        "justify-content": "center",
+        "margin-top": "10px"
+    }
+    const registerCenter = {
+        padding: "75px 50px 0 50px"
     }
 
 
@@ -58,8 +68,11 @@ export default function Register() {
     }
     return (
         <div className="register-container" style={registerBody}>
-            <div>Register</div>
-            <div>Create your company accounts</div>
+            <div className="register-content" style={registerCenter}>
+                <div style={registerContent}>Register</div>
+                <div style={registerContent}>Create your company accounts</div>
+            </div>
+            
             <div className="register-form">
                 <form onSubmit={handleSubmit}>
                     <div>
