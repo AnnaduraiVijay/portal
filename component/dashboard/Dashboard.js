@@ -12,7 +12,7 @@ export default function Dashboard({
         color: "white"
     }
     const tableArea = {
-        "border-collapse": "collapse"
+        "border-collapse": "collapse",
         "border": "1px solid white"
     }
     delete displayObj.token;
