@@ -13,6 +13,11 @@ export default function Login({
         if (username.length > 0 && password.length > 0) setEnable(false);
         else setEnable(true);
     };
+    const loginBody = {
+        width: "800px", 
+        height: "500px",
+        background: "rgb(11, 16, 67)"
+    }
 
     const onSubmit = e => {
         e.preventDefault();
@@ -43,7 +48,7 @@ export default function Login({
     };
 
     return (
-        <div className="login-user" style={{"width:800px", "height": "500px", "background": "rgb(11, 16, 67)"}}>
+        <div className="login-user" style={loginBody}>
             <div className="login-container">Login</div>
             <div className="login-header">Enter your account login details </div>
             <form className="login-form-container" onSubmit={onSubmit}>
