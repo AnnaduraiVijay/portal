@@ -77,30 +77,33 @@ export default function Login({
                 <div className="login-header" style={loginContent}>Enter your account login details </div>
             </div>
             <form className="login-form-container" onSubmit={onSubmit} style={formArea}>
-                <div style={inputCnt}>
+                <div>
                     <input
                         type="email"
                         id="username-input"
+                        style={inputCnt}
                         placeholder="Username/Email"
                         value={username}
                         onKeyUp={handleKeyUp}
                         onChange={(event) => setUsername(event.target.value)}
                     />
                 </div>
-                <div style={inputCnt}>
+                <div>
                     <input
                         type="password"
                         id="password-input"
+                        style={inputCnt}
                         placeholder="Password"
                         onKeyUp={handleKeyUp}
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
-                <div style={inputCnt}>
+                <div>
                     <button
                         type="submit"
                         id="button-input"
+                        style={inputCnt}
                         disabled={isEnable}
                     >
                         Sign In
