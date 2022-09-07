@@ -9,16 +9,23 @@ export default function Register() {
         background: "rgb(11, 16, 67)",
         color: "white"
     };
-
     const registerContent = {
         display: "flex",
         "align-items": "center",
         "justify-content": "center",
         "margin-top": "10px"
-    }
+    };
     const registerCenter = {
-        padding: "75px 50px 0 50px"
-    }
+        padding: "40px 50px 0 50px"
+    };
+    const formArea = {
+        border: "1px solid red",
+        width: "400px",
+        height: "200px",
+        padding: "40px 0 0 50px",
+        background: "rgb(32 49 115)",
+        margin: "25px 0 0 200px"
+    };
 
 
     const [formData, setFormData] = useState({
@@ -73,7 +80,7 @@ export default function Register() {
                 <div style={registerContent}>Create your company accounts</div>
             </div>
             
-            <div className="register-form">
+            <div className="register-form" style={formArea}>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <input
