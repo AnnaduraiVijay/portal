@@ -51,6 +51,7 @@ export default function Register() {
         password: "",
         referral: ""
     });
+    const [cntSuccess, setSuccessData] = useState(false);
     const updateFormData = (event) =>
         setFormData({
             ...formData,
@@ -84,7 +85,7 @@ export default function Register() {
             .then((response) => {
                 console.log(response);
                 console.log(response.data.status);
-                // setLoginData(response.data);
+                setSuccessData(response.data.status);
             });
 
     }
@@ -175,7 +176,9 @@ export default function Register() {
                     </div>
 
                     <button type="submit" style={inputCntBtn}>Submit</button>
+                    { cntSuccess && <div>Registration Success</div> }
                 </form>
+                
             </div>
         </div>
     );
