@@ -127,3 +127,14 @@
     filter: invert(1);
   }
 }
+
+body {
+  background: blue;
+  width: 1000px;
+  height:800px;
+  overflow: hidden;
+}
+
+.login-user {
+  background: green;
+}

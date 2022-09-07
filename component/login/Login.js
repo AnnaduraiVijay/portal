@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./login.module.css";
+import "./../styles/Home.module.css";
 
 export default function Login({
     setUserIsLoggedIn,
