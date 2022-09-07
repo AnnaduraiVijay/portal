@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import "./styles.css";
 
 export default function Register() {
+
+    const registerBody = {
+        width: "800px", 
+        height: "500px",
+        background: "rgb(11, 16, 67)",
+        color: "white"
+    }
+
+
     const [formData, setFormData] = useState({
         full_name: "",
         username: "",
@@ -49,7 +57,7 @@ export default function Register() {
 
     }
     return (
-        <div className="register-container">
+        <div className="register-container" style={registerBody}>
             <div>Register</div>
             <div>Create your company accounts</div>
             <div className="register-form">
