@@ -23,7 +23,9 @@ export default function Login({
         display: "flex",
         "align-items": "center",
         "justify-content": "center"
-
+    }
+    const loginCenter = {
+        padding: "100px 50px 0 50px"
     }
 
     const onSubmit = e => {
@@ -56,34 +58,40 @@ export default function Login({
 
     return (
         <div className="login-user" style={loginBody}>
-            <div className="login-content">
+            <div className="login-content" style={loginCenter}>
                 <div className="login-container" style={loginContent}>Login</div>
                 <div className="login-header" style={loginContent}>Enter your account login details </div>
             </div>
             <form className="login-form-container" onSubmit={onSubmit}>
-                <input
-                    type="email"
-                    id="username-input"
-                    placeholder="Username/Email"
-                    value={username}
-                    onKeyUp={handleKeyUp}
-                    onChange={(event) => setUsername(event.target.value)}
-                />
-                <input
-                    type="password"
-                    id="password-input"
-                    placeholder="Password"
-                    onKeyUp={handleKeyUp}
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                />
-                <button
-                    type="submit"
-                    id="button-input"
-                    disabled={isEnable}
-                >
-                    Sign In
-                </button>
+                <div>
+                    <input
+                        type="email"
+                        id="username-input"
+                        placeholder="Username/Email"
+                        value={username}
+                        onKeyUp={handleKeyUp}
+                        onChange={(event) => setUsername(event.target.value)}
+                    />
+                </div>
+                <div>
+                    <input
+                        type="password"
+                        id="password-input"
+                        placeholder="Password"
+                        onKeyUp={handleKeyUp}
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
+                </div>
+                <div>
+                    <button
+                        type="submit"
+                        id="button-input"
+                        disabled={isEnable}
+                    >
+                        Sign In
+                    </button>
+                </div>
             </form>
         </div >
     );
