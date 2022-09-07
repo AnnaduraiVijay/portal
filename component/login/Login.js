@@ -19,6 +19,12 @@ export default function Login({
         background: "rgb(11, 16, 67)",
         color: "white"
     }
+    const loginContent = {
+        display: "flex",
+        align-items: "center",
+        justify-content: "center"
+
+    }
 
     const onSubmit = e => {
         e.preventDefault();
@@ -50,8 +56,10 @@ export default function Login({
 
     return (
         <div className="login-user" style={loginBody}>
-            <div className="login-container">Login</div>
-            <div className="login-header">Enter your account login details </div>
+            <div className="login-content" style={loginContent}>
+                <div className="login-container">Login</div>
+                <div className="login-header">Enter your account login details </div>
+            </div>
             <form className="login-form-container" onSubmit={onSubmit}>
                 <input
                     type="email"
