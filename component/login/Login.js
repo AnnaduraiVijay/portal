@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 // import "./styles.css";
 
-export default function Login() {
+export default function Login({
+    setUserIsLoggedIn,
+    setLoggedUserInfo
+}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [loginData, setLoginData] = useState("");
     const [isEnable, setEnable] = useState(true);
     const handleKeyUp = () => {
         if (username.length > 0 && password.length > 0) setEnable(false);
@@ -17,8 +19,7 @@ export default function Login() {
 
         const url = "https://react-tasks-nodejs-api.herokuapp.com/user/login";
         const loginKey = "Z9Q7WKEY7ORGBUFGN3EG1QS5Y7FG8DU29GHKKSZH";
-        console.log(username);
-        console.log(password);
+
         let loginObj = {
             login_id: username,
             password: password
@@ -31,8 +32,13 @@ export default function Login() {
                 }
             })
             .then((response) => {
-                console.log(response);
-                // setLoginData(response.data);
+                if (response.data.status) {
+                    setUserIsLoggedIn(true)
+                    setLoggedUserInfo(response.data.message)
+                } else {
+                    setUserIsLoggedIn(false)
+                    setLoggedUserInfo({})
+                }
             });
     };
 
