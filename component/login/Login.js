@@ -35,6 +35,12 @@ export default function Login({
         background: "rgb(32 49 115)",
         margin: "40px 0 0 200px"
     }
+    const inputCnt = {
+        width: "250px",
+        height: "30px",
+        "margin-left": "20px",
+        "margin-top": "10px"
+    }
 
     const onSubmit = e => {
         e.preventDefault();
@@ -71,7 +77,7 @@ export default function Login({
                 <div className="login-header" style={loginContent}>Enter your account login details </div>
             </div>
             <form className="login-form-container" onSubmit={onSubmit} style={formArea}>
-                <div>
+                <div style={inputCnt}>
                     <input
                         type="email"
                         id="username-input"
@@ -81,7 +87,7 @@ export default function Login({
                         onChange={(event) => setUsername(event.target.value)}
                     />
                 </div>
-                <div>
+                <div style={inputCnt}>
                     <input
                         type="password"
                         id="password-input"
@@ -91,7 +97,7 @@ export default function Login({
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
-                <div>
+                <div style={inputCnt}>
                     <button
                         type="submit"
                         id="button-input"
